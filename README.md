@@ -1,8 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## React app to search and display movies using OMDB API
+React app to search and display movies using OMDB API
 
-## Material UI for styling the app
+Material UI for styling the app
+
+Reference for Travis CI-
+https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/
 
 ## Available Scripts
 

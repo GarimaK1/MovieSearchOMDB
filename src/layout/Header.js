@@ -3,9 +3,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-export default function Header() {
+const Header = () => {
     return (
-        <AppBar position="static">
+        <AppBar position="static" style={{marginBottom: '1rem'}}>
             <Toolbar>
                 <Typography variant="h5">
                     Movie Search OMDB
@@ -14,3 +14,5 @@ export default function Header() {
         </AppBar>
     );
 }
+
+export default Header;

@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-export default function Footer() {
+const Footer = () => {
     return (
         <AppBar position="static" style={{ alignItems: 'center'}}>
             <Toolbar>
@@ -14,3 +14,5 @@ export default function Footer() {
         </AppBar>
     );
 }
+
+export default Footer;

@@ -3,8 +3,10 @@ import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/sty
 import lightGreen from '@material-ui/core/colors/lightGreen';
 import orange from '@material-ui/core/colors/orange';
 
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
+import SearchBar from "./layout/SearchBar";
+import MovieDisplay from "./components/MovieDisplay";
 
 const theme = createMuiTheme({
   palette: {
@@ -20,13 +22,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column'
   },
   content: {
-    flexGrow: 1
-  },
-  header: {
-    flexShrink: 0
-  }, 
-  footer: {
-    flexShrink: 0
+    flexGrow: 1,
+    margin: '0 1rem 0.5rem 1rem'
   }
 }));
 
@@ -36,11 +33,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className={classes.layout}>
-        <Header className={classes.header} />
+        <Header />
         <div className={classes.content} >
-
+          <SearchBar />
+          <MovieDisplay />
         </div>
-        <Footer className={classes.footer} />
+        <Footer/>
       </div>
     </ThemeProvider>
   );

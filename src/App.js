@@ -2,6 +2,8 @@ import React from 'react';
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import lightGreen from '@material-ui/core/colors/lightGreen';
 import orange from '@material-ui/core/colors/orange';
+import purple from '@material-ui/core/colors/purple';
+import deepPurple from '@material-ui/core/colors/deepPurple';
 
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";

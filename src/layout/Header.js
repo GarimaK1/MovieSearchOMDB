@@ -3,11 +3,16 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
+const headingStyle = {
+    fontWeight: 500,
+    padding: '0.5rem'
+}
+
 const Header = () => {
     return (
         <AppBar position="static" style={{marginBottom: '1rem'}}>
             <Toolbar>
-                <Typography variant="h5">
+                <Typography variant="h4" style={headingStyle}>
                     Movie Search OMDB
                 </Typography>
             </Toolbar>

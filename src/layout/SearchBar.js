@@ -28,9 +28,7 @@ const SearchBar = () => {
 
     return (
         <div className={classes.divStyle}>
-            <Paper elevation={2}
-                className={classes.Paper}
-            >
+            <Paper className={classes.Paper}>
                 <InputBase
                     placeholder="Search movies by keywords/title"
                     className={classes.InputBase}

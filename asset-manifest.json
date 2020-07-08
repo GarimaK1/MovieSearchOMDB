@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/MovieSearchOMDB/static/css/main.e0d02f67.chunk.css",
-    "main.js": "/MovieSearchOMDB/static/js/main.f27e5983.chunk.js",
-    "main.js.map": "/MovieSearchOMDB/static/js/main.f27e5983.chunk.js.map",
+    "main.js": "/MovieSearchOMDB/static/js/main.aa979faf.chunk.js",
+    "main.js.map": "/MovieSearchOMDB/static/js/main.aa979faf.chunk.js.map",
     "runtime-main.js": "/MovieSearchOMDB/static/js/runtime-main.be76d972.js",
     "runtime-main.js.map": "/MovieSearchOMDB/static/js/runtime-main.be76d972.js.map",
-    "static/js/2.a6cc4956.chunk.js": "/MovieSearchOMDB/static/js/2.a6cc4956.chunk.js",
-    "static/js/2.a6cc4956.chunk.js.map": "/MovieSearchOMDB/static/js/2.a6cc4956.chunk.js.map",
+    "static/js/2.2466b8fe.chunk.js": "/MovieSearchOMDB/static/js/2.2466b8fe.chunk.js",
+    "static/js/2.2466b8fe.chunk.js.map": "/MovieSearchOMDB/static/js/2.2466b8fe.chunk.js.map",
     "index.html": "/MovieSearchOMDB/index.html",
-    "precache-manifest.3148d11cc687c8c8ff3c7b9e140a173c.js": "/MovieSearchOMDB/precache-manifest.3148d11cc687c8c8ff3c7b9e140a173c.js",
+    "precache-manifest.6f7103c45813da6956beaafa7766dcd6.js": "/MovieSearchOMDB/precache-manifest.6f7103c45813da6956beaafa7766dcd6.js",
     "service-worker.js": "/MovieSearchOMDB/service-worker.js",
     "static/css/main.e0d02f67.chunk.css.map": "/MovieSearchOMDB/static/css/main.e0d02f67.chunk.css.map",
-    "static/js/2.a6cc4956.chunk.js.LICENSE.txt": "/MovieSearchOMDB/static/js/2.a6cc4956.chunk.js.LICENSE.txt"
+    "static/js/2.2466b8fe.chunk.js.LICENSE.txt": "/MovieSearchOMDB/static/js/2.2466b8fe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.be76d972.js",
-    "static/js/2.a6cc4956.chunk.js",
+    "static/js/2.2466b8fe.chunk.js",
     "static/css/main.e0d02f67.chunk.css",
-    "static/js/main.f27e5983.chunk.js"
+    "static/js/main.aa979faf.chunk.js"
   ]
 }

@@ -50,7 +50,7 @@ const MovieSearchOMDB = () => {
             }
         }
     }
-
+/*
     const searchMoviesById = async (searchText) => {
         try {
             const res = await axios.get(`${PATH_BASE}${PARAM_SEARCH_ID}${searchText}`)
@@ -65,7 +65,7 @@ const MovieSearchOMDB = () => {
             }
         }
     }
-
+*/
     return (
         <div className={classes.layout}>
             <Header />

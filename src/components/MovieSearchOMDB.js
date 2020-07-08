@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const PATH_BASE='http://www.omdbapi.com/?apikey=d31ec762'
+const PATH_BASE='https://www.omdbapi.com/?apikey=d31ec762'
 const PARAM_SEARCH_TITLE='&s='
 const PARAM_SEARCH_ID='&i='
 

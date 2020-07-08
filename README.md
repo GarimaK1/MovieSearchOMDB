@@ -4,9 +4,6 @@ React app to search and display movies using OMDB API
 
 Material UI for styling the app
 
-Reference for Travis CI-
-https://www.freecodecamp.org/news/learn-how-to-automate-deployment-on-github-pages-with-travis-ci/
-
 ## Available Scripts
 
 In the project directory, you can run:

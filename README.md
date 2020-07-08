@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## React app to search and display movies using OMDB API
+
+## Material UI for styling the app
+
 ## Available Scripts
 
 In the project directory, you can run:

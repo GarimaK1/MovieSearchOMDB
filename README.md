@@ -1,8 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Build Status](https://travis-ci.org/GarimaK1/MovieSearchOMDB.svg?branch=master)](https://travis-ci.org/GarimaK1/MovieSearchOMDB)
 
 React app to search and display movies using OMDB API
 
 Material UI for styling the app
+
+Travis CI for Continuous Integration and deployment to Github Pages.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

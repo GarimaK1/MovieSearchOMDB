@@ -6,6 +6,8 @@ Material UI for styling the app
 
 Travis CI for Continuous Integration and deployment to Github Pages.
 
+Removed React.StrictMode from index.js coz giving error "findDOMNode is deprecated in StrictMode" in Material UI. Will impact CI integration.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

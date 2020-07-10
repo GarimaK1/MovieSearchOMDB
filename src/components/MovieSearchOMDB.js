@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
 
 const PATH_BASE='https://www.omdbapi.com/?apikey=d31ec762'
 const PARAM_SEARCH_TITLE='&s='
-// const PARAM_SEARCH_ID='&i='
 
 const MovieSearchOMDB = () => {
     const classes = useStyles();
@@ -30,7 +29,7 @@ const MovieSearchOMDB = () => {
     const searchMoviesByTitle = async (searchText) => {
         try {
             const res = await axios.get(`${PATH_BASE}${PARAM_SEARCH_TITLE}${searchText}`)
-            console.log(res.data.Search);
+            // console.log(res.data.Search);
             setMovies(res.data.Search);
         } catch (error) {
             if (error.response) {
@@ -50,22 +49,7 @@ const MovieSearchOMDB = () => {
             }
         }
     }
-/*
-    const searchMoviesById = async (searchText) => {
-        try {
-            const res = await axios.get(`${PATH_BASE}${PARAM_SEARCH_ID}${searchText}`)
-            console.log(res);
-        } catch (error) {
-            if (error.response) {
-                console.log(error.response.data);
-            } else if (error.request) {
-                console.log(error.request);
-            } else {
-                console.log('Error', error.message);
-            }
-        }
-    }
-*/
+
     return (
         <div className={classes.layout}>
             <Header />

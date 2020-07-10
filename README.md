@@ -1,12 +1,12 @@
 [![Build Status](https://travis-ci.org/GarimaK1/MovieSearchOMDB.svg?branch=master)](https://travis-ci.org/GarimaK1/MovieSearchOMDB)
 
-React app to search and display movies using OMDB API
+React app to search and display movies using OMDB API.
 
-Material UI for styling the app
+Fully responsive: Material UI for styling the app.
 
-Travis CI for Continuous Integration and deployment to Github Pages.
+Automated deployment to GitHub Pages by implementing CI/CD through Travis CI.
 
-Removed React.StrictMode from index.js coz giving error "findDOMNode is deprecated in StrictMode" in Material UI. Will impact CI integration.
+Removed React.StrictMode from index.js coz giving error "findDOMNode is deprecated in StrictMode" in Material UI. Was impacting CI integration.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

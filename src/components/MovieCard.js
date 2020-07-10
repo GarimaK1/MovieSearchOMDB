@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import MovieDetailsNew from "./MovieDetailsNew";
+import axios from 'axios';
 
 const useStyles = makeStyles({
     root: {
@@ -17,12 +19,48 @@ const useStyles = makeStyles({
     },
 });
 
+const PATH_BASE = 'https://www.omdbapi.com/?apikey=d31ec762'
+const PARAM_SEARCH_ID = '&i='
+
 const MovieCard = ({ movie }) => {
     const classes = useStyles();
 
+    const [open, setOpen] = useState(false);
+    const [movieDetails, setMovieDetails] = useState(movie);
+
+    const {Actors, Country, Language, Plot} = movieDetails;
+
+    const searchMoviesById = async (searchText) => {
+        try {
+            const res = await axios.get(`${PATH_BASE}${PARAM_SEARCH_ID}${searchText}`)
+            console.log(res.data);
+            setMovieDetails(res.data);
+        } catch (error) {
+            if (error.response) {
+                console.log(error.response.data);
+            } else if (error.request) {
+                console.log(error.request);
+            } else {
+                console.log('Error', error.message);
+            }
+        }
+    }
+
+    const handleModalOpen = () => {
+        console.log('Modal opened');
+        searchMoviesById(movie.imdbID);
+        setOpen(true);
+    };
+
+    const handleModalClose = () => {
+        setOpen(false);
+    };
+
     return (
         <Card className={classes.root}>
-            <CardActionArea>
+            <CardActionArea
+                onClick={handleModalOpen}
+            >
                 <CardMedia
                     component="img"
                     className={classes.img}
@@ -34,6 +72,15 @@ const MovieCard = ({ movie }) => {
             <Typography gutterBottom align="center" variant="subtitle1" >
                 {movie.Title}
             </Typography>
+            <MovieDetailsNew
+                movie={movie} 
+                open={open}
+                actors={Actors}
+                country={Country}
+                language={Language}
+                plot={Plot}
+                handleModalClose={handleModalClose}
+            />
         </Card>
     )
 }

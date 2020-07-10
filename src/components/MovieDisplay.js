@@ -1,6 +1,7 @@
 import React from 'react';
 import MovieCard from "./MovieCard";
 import Typography from '@material-ui/core/Typography';
+import PropTypes from 'prop-types';
 
 const displayStyle = {
     display: 'flex',
@@ -24,5 +25,9 @@ const MovieDisplay = ({ moviesToDisplay }) => {
         </div>
     )
 } 
+
+MovieDisplay.propTypes = {
+    moviesToDisplay: PropTypes.array.isRequired,
+};
 
 export default MovieDisplay;

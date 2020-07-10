@@ -6,6 +6,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import MovieDetails from "./MovieDetails";
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles({
     root: {
@@ -84,5 +85,9 @@ const MovieCard = ({ movie }) => {
         </Card>
     )
 }
+
+MovieCard.propTypes = {
+    movie: PropTypes.object.isRequired,
+};
 
 export default MovieCard;

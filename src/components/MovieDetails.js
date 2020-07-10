@@ -6,6 +6,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Grid from '@material-ui/core/Grid';
+import PropTypes from 'prop-types';
 
 const styles = {
     imgStyle: {
@@ -75,3 +76,13 @@ export default function MovieDetails({ movie, handleModalClose, open, actors, co
         </div>
     );
 }
+
+MovieDetails.propTypes = {
+    movie: PropTypes.object.isRequired,
+    handleModalClose: PropTypes.func.isRequired,
+    open: PropTypes.bool.isRequired,
+    actors: PropTypes.string,
+    country: PropTypes.string,
+    language: PropTypes.string,
+    plot: PropTypes.string
+};

@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import axios from 'axios';
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
-import SearchBar from "../layout/SearchBar";
+import SearchBar from "./SearchBar";
 import MovieDisplay from "./MovieDisplay";
 
 const useStyles = makeStyles((theme) => ({

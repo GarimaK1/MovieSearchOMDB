@@ -7,11 +7,22 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Grid from '@material-ui/core/Grid';
 
-const imgStyle = {
-    margin: 'auto',
-    height: '300px',
-    width: '250px'
+const styles = {
+    imgStyle: {
+        height: '350px',
+        width: '250px',
+        margin: '0.5rem'
+    },
+    contentStyle: {
+        display: 'flex',
+        flexDirection: 'column'
+    },
+    gridItemStyle: {
+        margin: 'auto'
+    }
 }
+
+const { imgStyle, contentStyle, gridItemStyle} = styles;
 
 export default function MovieDetails({ movie, handleModalClose, open, actors, country, language, plot }) {
 
@@ -24,23 +35,33 @@ export default function MovieDetails({ movie, handleModalClose, open, actors, co
                 onClose={handleModalClose}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
+                fullWidth={true}
+                maxWidth="lg"
             >
                 <Grid
                     container
-                    // alignContent='center'
-                    // alignItems='center'
                 >
-                    <Grid item xs='auto' style={{ margin: 'auto' }}>
+                    <Grid
+                        item
+                        xs='auto'
+                        style={gridItemStyle}
+                    >
                         <img src={Poster} alt={Title} style={imgStyle} />
                     </Grid>
-                    <Grid item xs={9} style={{ flexGrow: 2, margin: 'auto' }} >
+                    <Grid
+                        item
+                        xs={12}
+                        sm={6}
+                        lg={9}
+                        style={gridItemStyle}
+                    >
                         <DialogTitle id="alert-dialog-title">{Title} ({Year})</DialogTitle>
                         <DialogContent>
-                            <DialogContentText id="alert-dialog-description" >
-                                Actors: {actors} 
-                                Language: {language} 
-                                Country: {country} 
-                                Plot: {plot}
+                            <DialogContentText id="alert-dialog-description" style={contentStyle}>
+                                {language && <span><strong>Language:</strong> {language}</span>}
+                                {country && <span><strong>Country:</strong> {country}</span>}
+                                {plot && <span><strong>Plot:</strong> {plot}</span>}
+                                {actors && <span><strong>Actors:</strong> {actors}</span>}
                             </DialogContentText>
                         </DialogContent>
                         <DialogActions>

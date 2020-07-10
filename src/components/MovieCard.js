@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import MovieDetailsNew from "./MovieDetailsNew";
+import MovieDetails from "./MovieDetails";
 import axios from 'axios';
 
 const useStyles = makeStyles({
@@ -33,7 +33,7 @@ const MovieCard = ({ movie }) => {
     const searchMoviesById = async (searchText) => {
         try {
             const res = await axios.get(`${PATH_BASE}${PARAM_SEARCH_ID}${searchText}`)
-            console.log(res.data);
+            // console.log(res.data);
             setMovieDetails(res.data);
         } catch (error) {
             if (error.response) {
@@ -47,7 +47,7 @@ const MovieCard = ({ movie }) => {
     }
 
     const handleModalOpen = () => {
-        console.log('Modal opened');
+        // console.log('Modal opened');
         searchMoviesById(movie.imdbID);
         setOpen(true);
     };
@@ -72,7 +72,7 @@ const MovieCard = ({ movie }) => {
             <Typography gutterBottom align="center" variant="subtitle1" >
                 {movie.Title}
             </Typography>
-            <MovieDetailsNew
+            <MovieDetails
                 movie={movie} 
                 open={open}
                 actors={Actors}

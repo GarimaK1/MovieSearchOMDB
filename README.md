@@ -1,7 +1,5 @@
 # Movie Search OMDB [![Build Status](https://travis-ci.org/GarimaK1/MovieSearchOMDB.svg?branch=master)](https://travis-ci.org/GarimaK1/MovieSearchOMDB)
 
-## Project Description
-
 React app to search and display movies using OMDB API.
 
 Fully responsive: Material UI for styling the app.

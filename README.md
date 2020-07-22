@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/GarimaK1/MovieSearchOMDB.svg?branch=master)](https://travis-ci.org/GarimaK1/MovieSearchOMDB)
+# Movie Search OMDB [![Build Status](https://travis-ci.org/GarimaK1/MovieSearchOMDB.svg?branch=master)](https://travis-ci.org/GarimaK1/MovieSearchOMDB)
 
 ## Project Description
 
